@@ -20,6 +20,7 @@ a{
     align-items: center;
     position: fixed;
     background-color: white;
+    z-index: 2;
 }
 #navbar{
     width: 97%;
@@ -200,6 +201,14 @@ a{
     gap: 20px;
     width: 100%;
 }
+#buts2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
 #start{
     color: white;
     width: 100%;
@@ -263,6 +272,7 @@ a{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin: 20px;
 }
 .badge{
     display: flex;
@@ -284,7 +294,6 @@ a{
     top: -13px;
     background-repeat: no-repeat;
     background-image: url(Image/pb-hp-product-smb_icon-1.png);
-    z-index: -1;
 }
 #pic2{
     width: 100%;
@@ -294,7 +303,6 @@ a{
     top: -17px;
     background-image: url(Image/pb-hp-product-smb_icon-2.png);
     background-repeat: no-repeat;
-    z-index: -1;
 }
 #pic3{
     width: 100%;
@@ -304,7 +312,6 @@ a{
     top: -13px;
     background-image: url(Image/pb-hp-product-smb_icon-3.png);
     background-repeat: no-repeat;
-    z-index: -1;
 }
 #pic4{
     width: 100%;
@@ -314,7 +321,6 @@ a{
     top: -13px;
     background-image: url(Image/pb-hp-product-smb_icon-4.png);
     background-repeat: no-repeat;
-    z-index: -1;
 }
 .badgetxt{
     display: flex;
@@ -323,35 +329,31 @@ a{
     justify-content: center;
     align-items: start;
     width: 80%;
-    z-index: -1;
 }
 .learnmore{
     color: #032D60;
     text-decoration: underline;
-    z-index: -1;
 }
 .badgehead{
     color: #032D60;
     font-size: 20px;
     font-family: 'forwebsite';
-    z-index: -1;
-
 }
 .badgep{
     color: #181818;
     font-size: 18px;
     position: relative;
     top: -20px;
-    z-index: -1;
 }
 #viewbutton{
     padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 #vbut{
-    width: 230px;
+    width: 90%;
     height: 52px;
     font-size: 16px;
     font-weight: bold;
@@ -361,6 +363,57 @@ a{
     border-color: #0176D3;
     border-width: 2px;
     border-style: solid;
+}
+#vbut:hover{
+    background-color: rgba(234, 234, 234, 0.628);
+    border-color: black;
+}
+#bg2{
+    z-index: -10;
+    width: 100vw;
+    height: 600px;
+    margin-top: -270px;
+    background-image: url(Image/bg2.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#bringsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bring{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+#salestxt{
+    width: 724px;
+    text-align: center;
+    color: #181818;
+    font-size: 18px;
+}
+#learnsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#learntxt{
+    padding-top: 50px;
+}
+.module{
+    background-color: #1EA7FD33;
+    color: #032D60;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 10px;
 }
 @media only screen and (min-width:1440px){
     .toptabs{
@@ -414,6 +467,10 @@ a{
         flex-direction: row;
         justify-content: start;
     }
+    #buts2{
+        flex-direction: row;
+        justify-content: center;
+    }
     #trysales,#unitep{
         text-align: start;
     }
@@ -445,5 +502,8 @@ a{
    } 
    #badges{
     flex-direction: row;
+    }
+    #vbut{
+        width: 240px;
     }
 }
