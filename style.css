@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'forwebsite';
+    src: url('Fonts/ITCAvantGardePro-Bold.otf') format('opentype');
+}
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+#top{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+}
+#navbar{
+    width: 97%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ham{
+    background-image: url(Image/hamburger.svg);
+    width: 22px;
+    height: 22px;
+}
+#ham:hover{
+    filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
+}
+#logo{
+    background-image: url(Image/salesforce-no-type-logo.svg);
+    width: 45px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+#search{
+    background-image: url(Image/search-line.svg);
+    width: 18px;
+    height: 18px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+}
+#search:hover{
+    filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
+}
+#user{
+    background-image: url(Image/user-3-fill.svg);
+    width: 20px;
+    height: 20px;
+}
+#par1:hover{
+    filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
+}
+#globe{
+    background-image: url(Image/global-line.svg);
+    height: 20px;
+    width: 20px;
+    stroke: rgb(9, 9, 50);
+    stroke-width: 5px;
+}
+#globe:hover{
+    filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
+}
+#Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Login:hover{
+    filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
+}
+#try{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E844A;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 101px;
+    height: 30px;
+}
+#try:hover{
+    background-color: #122017;
+}
+#left{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#right{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#notsec{
+    width: 100%;
+    height: 125px;
+    padding-top: 56px;
+    background-color: #140075;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+#notification{
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+#Agentforcelogo{
+    background-image: url(Image/AgentForce.webp);
+    height: 24px;
+    width: 122px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#notsubhead{
+    color: white;
+}
+#notsubheadtxt{
+    padding-top: 15px ;
+    padding-bottom: 15px ;
+    font-family: 'forwebsite';
+    font-size: 14px;
+}
+#discover{
+    color: white;
+    text-decoration: underline;
+}
+#discover:hover{
+    text-decoration: none;
+}
+.toptabs{
+    display: none;
+}
+#contact{
+    display: none;
+    gap: 5px;
+}
+#cont{
+    font-size: 14px;
+    color: #032D60;
+    text-decoration: underline;
+}
+#cont:hover{
+    color: #085ec8;
+}
+#num{
+    font-size: 14px;
+    color: #032D60;
+}
+#video{
+    width: 350px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    background-image: url(Image/video.png);
+    margin-top: 35px;
+}
+#unitep{
+    font-family: sans-serif;
+    height: 57px;
+}
+#container{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+#text1{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#buts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+#start{
+    color: white;
+    width: 100%;
+    height: 52px;
+    background-color: #0176D3;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#watch{
+    color: #0176D3;
+    width: 100%;
+    height: 52px;
+    background-color: white;
+    border-color: #0176D3;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#trysales{
+    font-family: 'forwebsite';
+    padding-top: 70px;
+    font-weight: 900;
+    color: #032D60;
+    font-size: 40px;
+    width: 90%;
+    text-align: start;
+}
+#unitep{
+    text-align: start;
+    width: 100%;
+    height: 110px;
+    font-size: 21px;
+    color: #181818;
+}
+#start:hover{
+    background-color: #032D60;
+}
+#watch:hover{
+    background-color: rgba(234, 234, 234, 0.628);
+    border-color: black;
+}
+#learn{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#learntxt{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 90px;
+    font-size: 30px;
+    font-family: 'forwebsite';
+    color: #032D60;
+    padding-bottom: 30px;
+}
+#badges{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.badge{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    width: 290px;
+    height: 427px;
+    margin-bottom: 7px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 10px rgb(185, 185, 185);
+}
+#pic1{
+    width: 100%;
+    height: 171px;
+    background-size: contain;
+    position: relative;
+    top: -13px;
+    background-repeat: no-repeat;
+    background-image: url(Image/pb-hp-product-smb_icon-1.png);
+    z-index: -1;
+}
+#pic2{
+    width: 100%;
+    height: 171px;
+    background-size: contain;
+    position: relative;
+    top: -17px;
+    background-image: url(Image/pb-hp-product-smb_icon-2.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#pic3{
+    width: 100%;
+    height: 171px;
+    background-size: contain;
+    position: relative;
+    top: -13px;
+    background-image: url(Image/pb-hp-product-smb_icon-3.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#pic4{
+    width: 100%;
+    height: 171px;
+    background-size: contain;
+    position: relative;
+    top: -13px;
+    background-image: url(Image/pb-hp-product-smb_icon-4.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.badgetxt{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 80%;
+    z-index: -1;
+}
+.learnmore{
+    color: #032D60;
+    text-decoration: underline;
+    z-index: -1;
+}
+.badgehead{
+    color: #032D60;
+    font-size: 20px;
+    font-family: 'forwebsite';
+    z-index: -1;
+
+}
+.badgep{
+    color: #181818;
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+    z-index: -1;
+}
+#viewbutton{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vbut{
+    width: 230px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: #0176D3;
+    border-radius: 4px;
+    border-color: #0176D3;
+    border-width: 2px;
+    border-style: solid;
+}
+@media only screen and (min-width:1440px){
+    .toptabs{
+        display: block;
+        color: #032D60;
+        font-weight: bold;
+    }
+    .toptabs:hover{
+        color: #085ec8;
+    }
+    #try{
+        width: 135px;
+        height: 44px;
+        font-size: 16px;
+    }
+    #top{
+        height: 96px;
+    }
+    #ham{
+        display: none;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    #container{
+        flex-direction: row;
+    }
+    #logo{
+        background-image: url(Image/salesforce-with-type-logo.svg);
+        height: 48px;
+        width: 68px;
+    }
+    #notsec{
+        padding-top: 96px;
+        height: 48px;
+    }
+    #notification{
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+    #start,#watch{
+        font-size: 17px;
+        width: 170px;
+        height: 52px;
+    }
+    #buts{
+        flex-direction: row;
+        justify-content: start;
+    }
+    #trysales,#unitep{
+        text-align: start;
+    }
+    #trysales{
+        font-size: 48px;
+        width: 80%;
+    }
+    #text1{
+        align-items: start;
+        font-size: 20px;
+        width: 35%;
+    }
+    #unitep{
+        width: 83%;
+        height: 90px;
+    }
+    #buts{
+        align-items: start;
+    }
+    #video{
+        width: 540px;
+        height: 420px;
+        margin-top: 100px;
+    }
+   #learntxt{
+        font-size: 40px;
+        width: 50%;
+        overflow-y: hidden;
+   } 
+   #badges{
+    flex-direction: row;
+    }
+}
