@@ -705,6 +705,15 @@ a{
     align-items: center;
     width: 100%;
 }
+#start2:hover{
+    background-color: #032D60;
+    border-color: #032D60;
+}
+#see:hover{
+    color: #181818;
+    border-color: #181818;
+    background-color: rgba(234, 234, 234, 0.628);
+}
 @media only screen and (min-width:1024px){
     #bg1{
         z-index: -2;
