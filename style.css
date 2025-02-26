@@ -47,7 +47,6 @@ a{
     background-image: url(Image/search-line.svg);
     width: 18px;
     height: 18px;
-    margin-left: 30px;
     background-repeat: no-repeat;
 }
 #search:hover{
@@ -61,22 +60,33 @@ a{
 #par1:hover{
     filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
 }
+#globediv{
+    padding: 4px 4px;
+    border-radius: 30px;
+}
 #globe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(Image/global-line.svg);
     height: 20px;
     width: 20px;
-    stroke: rgb(9, 9, 50);
-    stroke-width: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-#globe:hover{
+#globediv:hover{
+    background-color: #7da4c492;
     filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
 }
 #Login{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px 12px;
+    border-radius: 30px;
 }
 #Login:hover{
+    background-color: #7da4c492;
     filter: brightness(0) saturate(100%) invert(53%) sepia(83%) saturate(2413%) hue-rotate(197deg) brightness(96%) contrast(103%);   
 }
 #try{
@@ -177,7 +187,7 @@ a{
 }
 #unitep{
     font-family: sans-serif;
-    height: 57px;
+    /* height: 57px; */
 }
 #container{
     padding-top: 10px;
@@ -187,6 +197,15 @@ a{
     align-items: center;
     width: 90%;
     margin: 0 auto;
+}
+#bg1{
+    background-image: url(Image/php-marquee-starter-sm-bg.png);
+    position: absolute;
+    z-index: -2;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 600px;
+    background-size: contain;
 }
 #text1{
     gap: 20px;
@@ -238,8 +257,9 @@ a{
 }
 #unitep{
     text-align: start;
-    width: 100%;
-    height: 110px;
+    width: 90%;
+    height: 150px;
+    overflow-y: hidden;
     font-size: 21px;
     color: #181818;
 }
@@ -248,7 +268,8 @@ a{
 }
 #watch:hover{
     background-color: rgba(234, 234, 234, 0.628);
-    border-color: black;
+    border-color: #181818;
+    color: #181818;
 }
 #learn{
     padding-top: 70px;
@@ -264,7 +285,7 @@ a{
     font-size: 30px;
     font-family: 'forwebsite';
     color: #032D60;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 #badges{
     display: flex;
@@ -333,6 +354,7 @@ a{
 .learnmore{
     color: #032D60;
     text-decoration: underline;
+    font-weight: bold;
 }
 .badgehead{
     color: #032D60;
@@ -366,13 +388,14 @@ a{
 }
 #vbut:hover{
     background-color: rgba(234, 234, 234, 0.628);
-    border-color: black;
+    border-color: #181818;
+    color: #181818;
 }
 #bg2{
     z-index: -10;
     width: 100vw;
-    height: 600px;
-    margin-top: -270px;
+    height: 150px;
+    margin-top: -45px;
     background-image: url(Image/bg2.webp);
     background-size: contain;
     background-position: center;
@@ -382,6 +405,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 #bring{
     display: flex;
@@ -391,9 +415,15 @@ a{
     gap: 20px;
     width: 90%;
 }
-
 #salestxt{
     width: 724px;
+    text-align: center;
+    color: #181818;
+    font-size: 18px;
+    width: 95%;
+}
+#follow{
+    width: 728px;
     text-align: center;
     color: #181818;
     font-size: 18px;
@@ -403,19 +433,202 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
+    overflow-y: hidden;
 }
 #learntxt{
     padding-top: 50px;
 }
+#learnval{
+    padding-top: 80px;
+    color: #032D60;
+    font-weight: bold;
+    font-family: 'forwebsite';
+    font-size: 40px;
+    width: 90%;
+}
 .module{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1EA7FD33;
     color: #032D60;
+    width: 45px;
     font-weight: bold;
     font-size: 12px;
     border-radius: 20px;
     padding: 10px;
 }
-@media only screen and (min-width:1440px){
+#img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Image/Values.webp);
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+}
+#we{
+    width: 90%;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'forwebsite';
+    color: #032D60;
+}
+#wep{
+    font-size: 18px;
+    color: #181818;
+    font-family: sans-serif;
+    text-align: center;
+    height: 150px;
+    width: 90%;
+}
+#img2{
+    background-image: url(Image/CRM.webp);
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+}
+#img3{
+    background-image: url(Image/SalesCloudBasics.webp);
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+}
+#badges2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.badge2{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 456px;
+    box-shadow: 1px 2px 10px rgb(172, 172, 172);
+    border-radius: 15px;
+}
+.badgetxt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+}
+#lff{
+    width: 90%;
+    height: 52px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0176D3;
+    background-color: white;
+    border-color: #0176D3;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+#lff:hover{
+    color: #181818;
+    border-color: #181818;
+    background-color: rgba(234, 234, 234, 0.628);
+}
+#bg3{
+    z-index: -10;
+    width: 100vw;
+    height: 80px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: url(Image/pb-hp-logos-bg-2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#imgbadge{
+    display: grid;
+    grid-template-columns: repeat(2, 144px);
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    width: 450px;
+    height: 344px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow-y: hidden;
+}
+#badgecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgbadge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 104px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 10px rgb(195, 195, 195);
+    border-radius: 15px;
+}
+.imgbadge a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgbadge img{
+    max-width: 70%;
+    max-height: 70%;
+}
+#oversec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#overdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+#over{
+    padding-top: 200px;
+    font-size: 40px;
+    color: #032D60;
+    font-family: 'forwebsite';
+    width: 90%;
+    height: 140px;
+    text-align: center;
+    overflow: hidden;
+}
+.badgehead:hover{
+    color: black;
+}
+.learnmore:hover{
+    text-decoration: none;
+    color: #0176D3;
+}
+.imgbadge:hover{
+    transform: scale(1.02);
+}
+@media only screen and (min-width:1024px){
+    #bg1{
+        z-index: -2;
+        height: 500px;
+        margin-left: 310px;
+        background-image: url(Image/startBG.webp);
+        width: 100vw;
+        background-size: contain;
+    }
     .toptabs{
         display: block;
         color: #032D60;
@@ -459,6 +672,9 @@ a{
         align-items: center;
     }
     #start,#watch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 17px;
         width: 170px;
         height: 52px;
@@ -468,6 +684,7 @@ a{
         justify-content: start;
     }
     #buts2{
+        padding-top: 30px;
         flex-direction: row;
         justify-content: center;
     }
@@ -484,7 +701,7 @@ a{
         width: 35%;
     }
     #unitep{
-        width: 83%;
+        width: 90%;
         height: 90px;
     }
     #buts{
@@ -495,15 +712,57 @@ a{
         height: 420px;
         margin-top: 100px;
     }
-   #learntxt{
+    #learntxt{
         font-size: 40px;
         width: 50%;
         overflow-y: hidden;
-   } 
-   #badges{
-    flex-direction: row;
+    } 
+    #badges{
+        flex-direction: row;
     }
     #vbut{
         width: 240px;
+    }
+    #bg2{
+        height: 600px;
+        margin-top: -270px;
+    }
+    #bg3{
+    height: 388px;
+    margin-top: -150px;
+    }
+    #badges2{
+        flex-direction: row;
+    }
+    .badge2{
+        width: 384px;
+    }
+    #salestxt{
+        width: 728px;
+    }
+    #over{
+        width: 840px;
+    }
+    #lff{
+        width: 195px;
+    }
+    #wep{
+        height: 84px;
+        width: 728px;
+    }
+    #we{
+        width: 840px;
+    }
+    #imgbadge{
+        width: 1064px;
+        grid-template-columns: repeat(4, 200px);
+        margin: 40px;
+        height: 216px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .imgbadge{
+        width: 200px;
+        height: 100px;
     }
 }
