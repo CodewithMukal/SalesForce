@@ -898,6 +898,90 @@ a{
     color: #0176D3;
     text-decoration: none;
 }
+#logo2{
+    background-image: url(Image/salesforce-with-type-logo.svg);
+    width: 92px;
+    height: 64px;
+    background-size: cover;
+}
+.linkbadge{
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    filter: brightness(0) saturate(100%) invert(25%) sepia(0%) saturate(25%) hue-rotate(252deg) brightness(96%) contrast(92%);
+}
+#fb{
+    background-image: url(Image/Logos/facebook-box-fill.svg);
+}
+#x{
+    background-image: url(Image/Logos/twitter-x-fill.svg);
+}
+#in{
+    background-image: url(Image/Logos/linkedin-box-fill.svg);
+}
+#insta{
+    background-image: url(Image/Logos/instagram-fill.svg);
+}
+#ytb{
+    background-image: url(Image/Logos/youtube-fill.svg);
+}
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+}
+#socials{
+    display: flex;
+    gap: 10px;
+}
+#socialfoot{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#calldiv{
+    font-size: 14px;
+    color: #181818;
+    font-weight: bold;
+}
+.list h3{
+    font-size: 14px;
+    color: #181818;
+    font-family: 'forwebsite';
+}
+.list ul li a{
+    font-size: 12px;
+    color: #0B5CAB;
+}
+.list{
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 333px;
+    align-items: bottom;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footsec{
+    display: none;
+}
+#mainfoot{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032E61;
+    color: white;
+}
 
 @media only screen and (min-width:1024px){
     #bg1{
@@ -1129,5 +1213,7 @@ a{
         width: auto;
         padding: 12px 32px;
     }
-
+    #footsec{
+        display: block;
+    }
 }
