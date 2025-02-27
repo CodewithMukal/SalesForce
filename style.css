@@ -714,6 +714,191 @@ a{
     border-color: #181818;
     background-color: rgba(234, 234, 234, 0.628);
 }
+#helpdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#helpimages{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+#helpdiv h2{
+    font-size: 40px;
+    color: #032D60;
+    font-family: 'forwebsite';
+    padding-bottom: 40px;
+    padding-top: 40px;
+    width: 90%;
+    text-align: center;
+}
+#helpimg1{
+    background-image: url(Image/php-products-small-business-in.png);
+}
+#helpimg2{
+    background-image: url(Image/php-products-sales-in.png);
+}
+#helpimg3{
+    background-image: url(Image/php-products-service-in.png);
+}
+#helpimg4{
+    background-image: url(Image/php-products-marketing.png);
+}
+.helpimage{
+    background-size: contain;
+    width: 272px;
+    height: 272px;
+}
+.helpbadges{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.helpbadges a{
+    color: #032D60;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.helpbadges a:hover{
+    color: #0176D3;
+    text-decoration: none;
+}
+#techsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#B1_5{
+    background-image: url(Image/group-201168.png);
+}
+#fort1{
+    background-image: url(Image/group-201169.png);
+}
+#fort2{
+    background-image: url(Image/group-201170.png);
+}
+.badge3{
+    width: 410px;
+    height: 273px;
+    background-size: contain;
+}
+#techdiv{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#techdiv h2{
+    text-align: center;
+    width: 90%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 35px;
+    font-family: 'forwebsite';
+    color: #032D60;
+}
+#fortunepar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fortunediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.fortunediv p{
+    font-size: 16px;
+    color: #181818;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+#bg4{
+    z-index: -10;
+    background-position: center;
+    width: 100vw;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(Image/pb-hp-products-bg-2.webp);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+#qsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#qdiv{
+    box-shadow: 1px 2px 10px rgb(192, 192, 192);
+    border: 2px white solid;
+    border-radius: 20px;
+    background-image: url(Image/pb-hp-footer-mid3-in.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 673px;
+    background-position:bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+}
+#qdiv h2{
+    padding-top: 20px;
+    color: #032D60;
+    font-size: 32px;
+    text-align: center;
+    width: 90%;
+    font-family: 'forwebsite';
+}
+#qdiv p{
+    color: #181818;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+}
+#buts4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+#buts4 button{
+    color: white;
+    background-color: #085ec8;
+    border: none;
+    width: 90%;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 52px;
+}
+#buts4 a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #032D60;
+    text-decoration: underline;
+}
+#buts4 button:hover{
+    background-color: #032D60;
+}
+#buts4 a:hover{
+    color: #0176D3;
+    text-decoration: none;
+}
+
 @media only screen and (min-width:1024px){
     #bg1{
         z-index: -2;
@@ -879,15 +1064,18 @@ a{
         height: 52px;
     }
     #right2{
+        width: 50%;
         height: 452px;
         justify-content: center;
         align-items: center;
-        margin: 20px;
+        margin-right: 20px;
     }
     #tffimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-size: cover;
-        width: 510px;
-        height: 452px;
+        height: 416px;
     }
     #left2{
         flex-direction: column;
@@ -896,4 +1084,50 @@ a{
         padding-bottom: 20px;
         width: 60%;
     }
+    #helpimages{
+        flex-direction: row;
+    }
+    #fortunepar{
+        flex-direction: row;
+    }
+    .fortunediv p{
+        text-align: left;
+        width: auto;
+    }
+    #helpdiv h2{
+        width: auto;
+        text-align: left;
+    }
+    #techdiv h2{
+        width: 820px;
+        height: 150px;
+        text-align: left;
+    }
+    .helpbadges{
+        align-items: start;
+    }
+    #bg4{
+    height: 380px;
+    }
+    #qdiv{
+        width: 1265px;
+        height: 450px;
+        justify-content: center;
+        background-size: cover;
+    }
+    #qdiv h2{
+            font-size: 40px;
+            width: 620px;
+    }
+    #qdiv p{
+        width: 550px;
+    }
+    #buts4{
+        flex-direction: row;
+    }
+    #buts4 button{
+        width: auto;
+        padding: 12px 32px;
+    }
+
 }
